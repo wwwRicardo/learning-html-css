@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    background-color: orange;
+    border: 3px solid black;
+    padding: 15px;
+    display: grid;
+    gap: 5px; /* espaçamento entre as caixas */
+    grid-template-areas:
+    'header header header header header'
+    'sidebar content content content content'
+    'footer footer footer footer footer';
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 30vh;
+}
+
+#content {
+    grid-area: content;
+    height: 30vh;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.container div {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+}

@@ -1,0 +1,7 @@
+@charset 'UTF-8';
+
+body {
+    background-image: url('/ex27-media-queries/pt2/imagens/cev-landscape.jpg');
+    background-size: cover;
+    background-position: left bottom;
+}

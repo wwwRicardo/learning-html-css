@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+@media (min-width: 769px) {
+    i.menu {
+        display: none;
+    }
+    
+    header nav {
+        display: block;
+    }
+    
+    article {
+        max-width: 600px;
+    }
+}

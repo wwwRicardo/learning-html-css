@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário</title>
+</head>
+
+<body> 
+    <form action="cadastro.js" autocomplete="on" method="POST"> <!-- 
+        method='GET' as informações do formulario irão aparecer na URL.
+    
+        method='POST' irá esconder as informações da URL -->
+        
+        <!-- autocomplete='off' para tirar o autocomplete
+             Utilizando autocomplete em input você denomina a função de cada caixa.
+             EX: autocomplete="username"
+                autocomplete="current-password" -->
+        
+    <!-- LABEL para fazer ligação das caixas com o texto -->
+        <p> <label for="inome">Nome</label> <input type="text" name="nome" id="inome" required minlength="4" maxlength="10" size="8" placeholder="Nome Fictício" autocomplete="username"> <!-- REQUIRED torna o campo obrigatório de ser preenchido.
+            
+            MINLENGTH delimita o mínimo de carcteres.
+            MAXLENGTH delimita o máximo de caracteres.
+            SIZE delimita o tamanho da caixa.
+            
+            PLACEHOLDER coloca uma mensagem dentro da caixa.
+            
+            --> </p>
+        <p> <label for="isenha">Senha</label> <input type='password' name="senha" id="isenha" required minlength="8" size="8" placeholder="Senha Forte" autocomplete="current-password"></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+  /*configuração global*/
+  text-align: justify;
+  height: 100%;
+  /*background-attachment: fixed;*/
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  background-image: linear-gradient(to bottom,   #FACF11, #FFA005);
+}
+
+main {
+  height: auto;
+  background-color: white;
+  box-shadow: 5px /*Lado*/ 5px /*Baixo*/ 5px /*Espalhamento*/ #C08A01AB /*Cor*/;
+  border-radius: 5px; /* Arredonda as pontas */
+  width: 375px; /* Largura */
+  padding: 10px; /* aumenta a borda no fim do texto */
+  margin: auto; /* Centraliza automaticamente no meio da tela */
+}
+
+h1 {
+  /* font-style font-weight font-size font-family */
+  font: italic bold 2.5em Arial, Helvetica, sans-serif;
+  color: #EFFA0A;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+p {
+  text-indent: 25px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}

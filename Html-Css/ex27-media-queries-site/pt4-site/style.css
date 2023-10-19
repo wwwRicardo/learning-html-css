@@ -1,0 +1,69 @@
+@charset 'UTF-8';
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+html, body {
+    background-color: black;
+}
+
+header {
+    background-color: white;
+    color: black
+    padding: 10px;
+}
+
+header nav {
+    display: none;
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+header a {
+    display: block;
+    color: darkgoldenrod;
+    background-color: white;
+    border: 2px antiquewhite solid;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/ex27-media-queries-site/pt4-site/imagens/download.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+article {
+    background-color: palegoldenrod;
+    margin: auto;
+    width: 95vw;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+article h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 10px;
+}
+
+article p {
+    padding-bottom: 10px;
+    text-indent: 15px;
+}

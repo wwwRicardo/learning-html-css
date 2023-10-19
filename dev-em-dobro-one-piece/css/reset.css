@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul { /* remove as bolinhas da ul */
+    list-style: none;
+}
+
+
+

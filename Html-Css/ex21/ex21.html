@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adaptando a tabela para dispositivos</title>
+    <style>
+    
+    div.adaptar {
+        /* OVERFLOW-X: auto; cria uma barra de rolagem quando o conteúdo transborda para a esquerda ou para a direita (horizontal). 
+        
+            OVERFLOW-Y: auto; é para quando o conteúdo transborda para cima ou para baixo (vertical).
+            
+            OVERFLOW: auto; serve para ambos.
+            
+            OBS: <TABLE> tem que estar dentro de <DIV> */
+        overflow-x: auto;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 500px;
+        text-align: center;
+    }
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adaptando a tabela para dispositivos</h1>
+    
+    <div class="adaptar">
+        <table>
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

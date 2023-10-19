@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <form action="cadastro.js">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome e Sobrenome">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" required placeholder="0 a 10" step="0.1" value="1"> <!-- MIN delimita o mínimo de uma caixa numérica.
+                     MAX delimita o máximo de uma caixa numérica.
+                     
+                     STEP você pode adicionar numeros em décimos,    EX: 5.1, 7.6, etc. 
+                     
+                     VALUE adiciona automaticamente conteúdo dentro da caixa. -->
+        </p>
+        
+        <p>
+            <label for="imes">mês</label>
+            <input type="month" name="mes" id="imes">
+            <!-- MONTH adiciona apenas mês e ano. -->
+        </p>
+        
+        <p>
+            <label for="idata">data</label>
+            <input type="date" name="data" id="idata">
+            <!-- DATE adiciona dia, mês e ano. -->
+        </p>
+        <p>
+            <label for="itime">Hora</Hora>
+            <input type="time" name="time" id="itime">
+                <!-- TIME adiciona o horário. -->
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+
+</html>

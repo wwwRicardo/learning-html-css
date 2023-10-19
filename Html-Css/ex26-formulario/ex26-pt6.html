@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>formulario</title>
+</head>
+
+<body>
+    <p>
+        <form action="cadastro.js" method="POST">
+            <label for="iestado">estado</label>
+            
+            <!--SELECT Utilizando a tag select você pode criar uma caixa com múltiplas escolhas.
+                    
+                    OPTION você coloca a opção. 
+                        OPTGROUP você pode      agrupar as options.
+                        -->
+            <select name="estado" id="iestado">
+                <optgroup label="Região Nordeste">
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="Ce">Ceara</option>
+                    <option value="pi">Piauí</option>
+                    </select>
+                </optgroup>
+        </form>
+    </p>
+    
+    <p>
+        <!-- para criar uma lista com input-text, adicione list="id da datalist". adiciona a tag datalist com id e abaixo as opções da lista
+        
+        <input-text list="lista">
+            datalist id="lista"
+                option 
+                -->
+        <label for="ilista">lista profissão</label>
+        <input type="text" name="lista" id="ilista" list="lista">
+        <datalist id="lista">
+            <option>advogado</option>
+            <option>cozinheiro</option>
+            <option>gari</option>
+            <option>desenvolvedor</option>
+        </datalist>
+    </p>
+    
+    <p>
+        <!-- com textarea tambem deve se usar o method="post". 
+        Utilizando maxlength você limite a quantidade de caractetes.
+        utilizando o style="resize=none" limitamos o usuário de modificar o tamanho da caixa. -->
+        <label for="idigite">digite</label><br>
+        <textarea name="digite" id=idigite rows="8" cols="40" maxlength="100" style="resize: none;"></textarea>
+        
+    </p>
+    
+    <p>
+        <input type="submit" value="enviar">
+    </p>
+</body>
+
+</html>

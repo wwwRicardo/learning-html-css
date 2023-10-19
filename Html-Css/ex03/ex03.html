@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diferentes telas</title>
+</head>
+
+<body>
+<h1>Diferentes tamanhos de imagens na tela</h1>
+<p>Em telas menores a imagem se altera, assim como em telas maiores</p>
+<picture>
+  <source media="(max-width:750px)" srcset="/ex03/imagens/P.png" type="image/png">
+  <source media="(max-width:1050px)" srcset="/ex03/imagens/M.png" type="image/png">
+  <img src="/ex03/imagens/G.png" alt="Imagem tamanho G">
+  </picture>
+  <h1>Reproduzindo áudio</h1>
+  <audio preload="metadata" controls>
+    <source src="/ex03/audio/Mim de papai kkkkkk.mp3" type="audio/mpeg">
+  </audio>
+  <p>Se seu site não conseguiu carregar o audio, baixe aqui. <a href="/ex03/audio/Mim de papai kkkkkk.mp3">DOWNLOAD</a></p>
+<h1>Aqui nos teremos um vídeo</h1>
+<video width="250" controls poster="/ex03/imagens/P.png">
+  <source src="/ex03/videos/VID_20230726_224614_576.mp4" type="video/mp4">
+</video>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iframe</title>
+    <style>
+        iframe {
+            border: 1px solid black;
+            width: 350px;
+            height: 200px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Navegação com iframe</h1>
+    
+    <ul>
+        <li><a href="/ex19-desafio-pt2/ex19-desafio-pt2.html" target="frame">Site 1</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="frame">Site 2</a></li>
+    </ul>
+    
+    <!--Colocando um NAME no IFRAME você pode usar um TARGET no <A> com o nome que está no iframe para mostrar a pagina dentro do iframe, podendo substituir por outras paginas.-->
+    <iframe src="" frameborder="0" name="frame" srcdoc="<h1>Com o SRCDOC eu posso utilizar html dentro do iframe</h1>"></iframe> <!--Com o SRCDOC eu posso utilizar html dentro do iframe-->
+</body>
+
+</html>

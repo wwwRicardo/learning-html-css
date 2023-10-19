@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario checkbox e radio</title>
+</head>
+
+<body>
+    <h1>checkbox e radio</h1>
+    <form action="cadastro.js" method="GET">
+        <fieldset>
+            <legend>Identidade</legend>
+            
+            <input type="radio" name="identidade" id="imasculino" checked>
+            <label for="imasculino">masculino</label>
+            
+            <input type="radio" name="identidade" id="ifeminino">
+            <label for="ifeminino">feminino</label>
+            <!-- RADIO só irá marcar uma opção. OBS: apenas colocando o mesmo name em todas as caixas você  poderá marcar uma opção. -->
+        </fieldset>
+        
+        <fieldset>
+            <legend>Jogo Favorito</legend>
+            
+            <!--com CHECKBOX você poderá marcar múltiplas opções. -->
+            <input type="checkbox" name="cs2" id="ics2">
+            <label for="ics2">cs2</label><br>
+            
+            <!-- utilizando CHECKED no input a caixa irá ser marcada automaticamente. -->
+            <input type="checkbox" name="csgo" id="icsgo" checked>
+            <label for="icsgo">csgo</label><br>
+            
+            <input type="checkbox" name="valorant" id="ivalorant">
+            <label for="ivalorant">valorant</label>
+        </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+
+</html>

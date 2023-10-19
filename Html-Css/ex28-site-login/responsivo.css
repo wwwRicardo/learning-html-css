@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@media (min-width: 800px) {
+    div#base {
+        display: flex;
+        flex-direction: row;
+    }
+    div#formulario {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+    }
+    
+    div#imagem {
+        height: 100%;
+        width: 50%;
+    }
+     
+    

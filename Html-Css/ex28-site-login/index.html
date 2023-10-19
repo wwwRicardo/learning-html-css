@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <title>Projeto Login</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="base">
+                <div id="imagem">
+                
+                </div>
+                <div id="formulario">
+                    <form action="cadastro.js" method="post" autocomplete="on">
+                        <h1>Concte-se</h1>
+                        <div class="campo">
+                            <span class="material-symbols-outlined">person</span>
+                            <input class="dados" type="email" name="email" id="iemail" placeholder="    Email" autocomplete="email" required>
+                            <label for="iemail">Email</label>
+                        </div>
+                        
+                        <div class="campo">
+                            <span class="material-symbols-outlined">vpn_key</span> <input class="dados" type="password" name="senha" id="isenha" placeholder="    Senha" autocomplete="current-password" required>
+                            <label for="isenha">Senha</label>
+                        </div>
+                        
+                        <input type="submit" value="Enviar">
+                        <a id="esquecisenha" href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

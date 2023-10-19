@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --fonte1: Arial, Helvetica, sans-serif;
+  --fonte2: Bebas Neue, sans-serif;
+  --fonte3: 'Teko', sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--fonte1);
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: lightgray;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header > h1 {
+  font-variant: small-caps;
+  padding-top: 25px;
+  font-family: var(--fonte2);
+  font-size: 7vh;
+}
+
+header > p {
+  padding-bottom: 25px;
+}
+
+header a, footer a {
+  color: white;
+  font-variant: small-caps;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 1.5em;
+  font-size: 3vh;
+}
+
+section > p {
+  font-family: var(--fonte3);
+  padding-bottom: 2em;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: darkslategrey;
+  color: white;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  box-shadow: inset 7px 7px 6px 0px #00000057;
+}
+
+#img1 {
+  background-image: url('/projeto-cordel/imagens/background001.jpg');
+  background-position: center right;
+}
+
+#img2 {
+  background-image: url('/projeto-cordel/imagens/background002.jpg');
+}
+
+section.imagem > p {
+  background-color: rgba(0, 0, 0, 0.26);
+  width: fit-content;
+  /* usando o "display: inline-block;"
+     ou o "width: fit-content",
+     a caixa fica centralizada com o texto */
+   padding: 25px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  padding: 5px;
+}

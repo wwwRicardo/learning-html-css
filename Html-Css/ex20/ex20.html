@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agrupando colunas com colgroup</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 300px;
+    }
+    
+    th, td {
+        border: 1px solid black;
+        padding: 7px;
+    }
+    
+    .idade {
+        background-color: lightgray;
+    }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Agrupando colunas com colgroup</h1>
+    <table>
+        <!-- COLGROUP vai permitir configurar as colunas. Começando da esquerda para a direita.
+        Utilizando o SPAN você pode configurar as colunas ao lado.
+        
+        COLGROUP
+                COL
+                -->
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade" span="2">
+            <col class="profissao">
+        </colgroup>
+        <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>Masculino</td>
+                <td>20</td>
+                <td>Mecânico</td>
+                <tr>
+                    <td>Carlos</td>
+                    <td>Masculino</td>
+                    <td>44</td>
+                    <td>Engenheiro</td>
+                </tr>
+                <tr>
+                    <td>Ricardo</td>
+                    <td>Masculino</td>
+                    <td>19</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Lívia</td>
+                    <td>Feminino</td>
+                    <td>16</td>
+                    <td>Atendente</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Feminino</td>
+                    <td>32</td>
+                    <td>Advogada</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

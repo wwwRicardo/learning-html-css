@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabelas grandes</title>
+  
+  <style>
+      table {
+          width: 400px;
+          border-collapse: collapse;
+          position: relative;
+      }
+      td, th {
+          border: 1px solid black;
+          padding: 5px;
+      }
+      thead, tfoot {
+          background-color: gray
+      }
+      
+      tbody > tr:nth-child(odd) { /* 2n vai pular de 2 em 2 linhas; odd == começa pelo impar; even == começa pelo par */
+          background-color: white;
+      }
+      tbody> tr:nth-child(even) {
+          background-color: lightgray;
+      }
+      
+      thead > tr > th {
+          /* Esta configuração faz o cabeçalho da tabela grudar no topo quando for rolando a tela. OBS: serve para tabelas com muitas colunas*/
+          position: sticky;
+          top: 0;
+          background-color: gray;
+      }
+  </style>
+</head>
+
+<body>
+    <h1>Tabelas grandes</h1>
+    <!-- TABLE
+    CAPTION
+        Cria um título para a tabela
+        
+    THEAD
+        TH TR TD
+    TBODY
+        TH TR TD
+    TFOOT
+        TH TR TD
+        
+    SCOPE
+        scope COL, para colunas. quando os numeros estão abaixo do th.
+        scope ROW para linhas. quando os numeros estão na mesma linha do th.
+    -->
+    <table>
+        <caption>Tabela populacional</caption>
+       <thead>
+           <tr>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 100px;">População</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>São Paulo</td>
+               <td>21.000.000</td>
+           </tr>
+           <tr>
+               <td>Estado Inexistente</td>
+               <td>50</td>
+           </tr>
+           <tr>
+               <td>Rio Grande do Norte</td>
+               <td>1</td>
+           </tr>
+           <tr>
+               <td>Estado Morto</td>
+               <td>0</td>
+           </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <th scope="row">Total</tb>
+               <td>21.000.051</td>
+           </tr>
+       </tfoot> 
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec iaculis nibh. Etiam porta ex ac magna dignissim, vel ornare nibh convallis. Suspendisse consectetur, velit nec lobortis aliquet, tortor nisl tristique ex, ac fringilla ante felis eget tortor. Nullam risus ante, convallis eleifend faucibus in, accumsan non justo. Integer tincidunt porta nisl, ut faucibus ligula pellentesque at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam at diam non elit fringilla interdum quis ac libero. Etiam sit amet massa et ligula maximus varius. Vestibulum mollis luctus tortor, ac gravida libero mollis in.
+
+Donec egestas scelerisque lobortis. Proin eget bibendum ex, eget accumsan sem. Nulla sit amet justo ac ipsum blandit finibus a in ligula. Curabitur egestas nisl massa, et pulvinar nunc aliquet non. Pellentesque luctus suscipit augue sit amet sollicitudin. Sed sit amet massa ornare, tincidunt dolor vitae, varius eros. Cras orci erat, euismod eget orci ut, consectetur dignissim odio. Nullam ultrices vestibulum mauris non porta. Curabitur nisl risus, maximus vel vestibulum non, fermentum non nibh. Fusce tristique rutrum ante eu placerat. Etiam blandit et velit sit amet vestibulum. Phasellus lacinia libero vitae ligula euismod semper.
+
+Sed gravida dui convallis pulvinar pharetra. Maecenas sagittis sapien ut nulla suscipit consequat. Pellentesque viverra gravida gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam quis arcu nec convallis. Aliquam a blandit est, eget dignissim diam. Pellentesque hendrerit dolor eu est posuere hendrerit. Fusce blandit tempus augue. Praesent et consectetur lacus, et auctor nunc. Curabitur interdum odio egestas, dignissim mauris sit amet, lobortis lacus.
+
+Donec fermentum mattis velit non hendrerit. Nulla malesuada laoreet est, vel maximus tellus ornare non. Mauris et efficitur est. Curabitur auctor leo ut odio sollicitudin congue. Nam pellentesque fringilla mauris sit amet fermentum. Curabitur ut turpis ac orci luctus auctor et sit amet lectus. Sed eget enim venenatis, convallis nisl in, luctus felis. Aliquam accumsan augue ut lectus consectetur, quis efficitur eros tincidunt. Praesent et auctor tortor. Donec interdum ipsum cursus, elementum massa nec, maximus nisi. Nam sollicitudin justo in pellentesque molestie. Praesent bibendum odio massa, in varius orci porttitor sed.
+
+Aliquam molestie mi velit, non malesuada dolor varius vel. Sed eu urna maximus, dignissim mi et, venenatis orci. Vivamus consectetur vestibulum massa non elementum. Vivamus mollis mattis suscipit. Nunc leo urna, sollicitudin in libero a, luctus dapibus mauris. Maecenas ut metus ultricies metus scelerisque interdum. Mauris facilisis nec tortor non aliquam. Vestibulum sed blandit justo. Mauris sed fringilla ex, in pulvinar elit. Vivamus finibus fringilla lacus. Nam purus leo, convallis in ornare eu, molestie tristique ligula. Aenean eget nulla tellus. Curabitur non porta nibh, nec viverra sapien. Etiam vestibulum, mi eget luctus mattis, nulla justo sodales sapien, et hendrerit felis tortor at leo. Mauris vitae egestas risus, tincidunt dapibus nibh. Phasellus a tincidunt lectus, ut finibus magna.</p>
+</body>
+
+</html>
