@@ -9,24 +9,25 @@
 
 <body>
     <h1>output</h1>
-    <form action="cadastro.js">
         <p>
             <label for="iano">Que ano você nasceu? </label>
-            <input type="number" name="idade" id="iano" oninput="calculoidade()">
+            <input type="number" name="idade" id="iano">
         </p>
         <p>
             <label for="idade">idade</label>
             <output id="idade">0</output>
         </p>
         <p>
-            <input type="submit" value="enviar">
+            <input onclick="calculoidade()" type="button" value="enviar">
             <input type="reset" value="limpar">
         </p>
         
         <script>
             function calculoidade() {
-                const atual = New Date().getFullYear()
-                idade.InnerHTML = Number(atual) - Number(iano.value)
+                let atual = new Date().getFullYear()
+                let jsidade = document.getElementById('idade')
+                let jsiano = document.getElementById('iano')
+                jsidade.innerHTML = Number(atual) - Number(jsiano.value)
             }
         </script>
     </form>
