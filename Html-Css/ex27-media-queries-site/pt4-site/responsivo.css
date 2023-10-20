@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     i.menu {
         display: none;
     }
