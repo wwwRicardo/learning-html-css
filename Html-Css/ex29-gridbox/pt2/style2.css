@@ -11,7 +11,7 @@
     border: 3px solid black;
     padding: 15px;
     display: grid;
-    grid-template-columns: auto auto auto; /* pega as 3 colunas e aumenta o tamanho da largura da caixa.
+    grid-template-columns: auto 150px auto; /* pega as 3 colunas e aumenta o tamanho da largura da caixa.
         com grid-template-rows irá aumentar a altura das 2 rows (linhas). */
     height: 10vh;
     justify-content: center; /* alinhamento horizontal. */
