@@ -1,0 +1,5 @@
+@charset ('UTF-8');
+
+body {
+    background: url(./imagens/bg-mobile.jpg) no-repeat top center/cover;
+}
